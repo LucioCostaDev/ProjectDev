@@ -1,39 +1,57 @@
 body {
+	/* foi exportado do google fonts  */
 	font-family: 'Poppins', sans-serif;
+	/* body corpo definido como 1280x1966 */
 	max-width: 1280px;
+	/* defini as sobras automáticamente da largura do navegador */
 	margin: 0 auto;
-	background-color: #5e5b5bad;
-	color: #333333;
+	/* Cor do fundo */
+	background-color: #70B3DF;
+	/* Cor da fonte */
+	color: black;
 }
 
-/* body.modo-escuro {
+/* Definido para poder fazer fica escuro o background ao aperta botão - JAVASCRIPT */
+body.modo-escuro {
+	/* Fundo */
 	background-color: #212121;
+	/* cor da fonte */
 	color: #f5f5f5;
-} */
+}
 
-/* header {
+/* Cabeçalho */
+header {
+	/* DISPLAY FLEX faz com que elementos possam ser posicionados */
 	display: flex;
+	/* JUSTIFY CONTENT da um espaça,espaçamento entre os elementos  */
 	justify-content: space-between;
+	/* PADDING da um espaçamento para o elemento */
 	padding: 25px;
-} */
+}
 
-/* header .logo,
+/* .logo é .imagem-botao são classes definida dentro do IMG dentro HEADER para ser estilizada (sofrer alteração)  */
+header .logo,
 header .imagem-botao {
 	width: 30px;
-	transition: 0.2s ease-in-out;
-} */
+	/*  */
+	/* transition: 0.2s ease-in-out; */
+}
 
-/* header #botao-alterar-tema {
+/* #BOTAO-ALTERAR-TEMA e uma ID de button foi criado pra tirar o fundo branco da imagem */
+header #botao-alterar-tema {
 	background: none;
 	border: none;
-} */
+}
 
-/* header .logo:hover,
+/* E usado um a pseudoclasse :HOVER pra da um efeito nos botões e imagens ao passar o ponteiro do mouse */
+header .logo:hover,
 header .imagem-botao:hover,
 main .cartao-pokemon:hover {
-	transform: scale(1.05);
+	/* TRANSFORM SCALE e a duração do efeito hover */
+	transform: scale(1, -1);
+	/* CURSOR POINTER da o efeito de uma mão apontando */
 	cursor: pointer;
-} */
+}
 
 /* main {
 	padding: 25px;
