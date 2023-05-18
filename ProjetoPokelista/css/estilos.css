@@ -58,29 +58,41 @@ main .cartao-pokemon:hover {
 	cursor: pointer;
 }
 
-
+/* Visando de uma forma de aprendizado o MAIN seria o peito do corpo */
 main {
+	/* PADDING aqui da um espaçamento dos elementos no peito */
 	padding: 25px;
 }
 
-/* main .listagem-pokemon {
+/* Na UL tem a calsse .LISTAGEM-POKEMON vai ser alterada para o conteudo fica separado e na vertical */
+main .listagem-pokemon {
+/* Na UL o DIPLAY FLEX vai separar os conteudos da UL e deixa na vertical */
 	display: flex;
+/* FLEX WRAP vai deixar na vertical ouse ja quebra pra baixo os cartões */
 	flex-wrap: wrap;
+	/* O GAP vai da os espaçamentos entre os cartões */
 	gap: 30px;
+	/* O JUSTIFY CONTENT vai centralizar os conteudo da UL; */
 	justify-content: center;
-} */
 
-/* main .cartao-pokemon {
-	background-color: #d8e3ec;
-	width: 200px;
+	/* Obs. UL está seguindo um pedagogia de ser PAI para FILHOS ou seja UL > li > div > spam que estão dentro da UL  */
+}
+
+/* LI tem a classe .CARTAO- POKEMON tem que ser estilizada para virar um cartão */
+main .cartao-pokemon {
+	/* vai ser o fundo do cartão */
+	background-color: #a3903b;
+	/* WIDTH aqui está dando largura para virar carta */
+	width: 200px; 
+	/* PADDING aqui da um espaçamento da borda dos cartoes, explicanro a letras proximas da bordas */
 	padding: 15px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 15px;
-	border-radius: 15px;
-	transition: 0.2s ease-in-out;
-} */
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* align-items: center; */
+	/* gap: 15px; */
+	/* border-radius: 15px; */
+	/* transition: 0.2s ease-in-out; */
+}
 
 /* main .cartao-pokemon:hover {
 	background-color: #96d9d6;
