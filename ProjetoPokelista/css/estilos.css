@@ -43,19 +43,25 @@ header #botao-alterar-tema {
 	border: none;
 }
 
+/* Efeito no interruptor HOVER é TRANSFORM SCALE brabo kkk.. */
+header .imagem-botao:hover {
+	transform: scale(1, -1);
+	cursor: pointer;
+}
+
 /* E usado um a pseudoclasse :HOVER pra da um efeito nos botões e imagens ao passar o ponteiro do mouse */
 header .logo:hover,
-header .imagem-botao:hover,
 main .cartao-pokemon:hover {
 	/* TRANSFORM SCALE e a duração do efeito hover */
-	transform: scale(1, -1);
+	transform: scale(1.05);
 	/* CURSOR POINTER da o efeito de uma mão apontando */
 	cursor: pointer;
 }
 
-/* main {
+
+main {
 	padding: 25px;
-} */
+}
 
 /* main .listagem-pokemon {
 	display: flex;
