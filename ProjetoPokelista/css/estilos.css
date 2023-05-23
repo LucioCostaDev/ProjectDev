@@ -32,7 +32,7 @@ header {
 /* .logo é .imagem-botao são classes definida dentro do IMG dentro HEADER para ser estilizada (sofrer alteração)  */
 header .logo,
 header .imagem-botao {
-	width: 30px;
+	width: 40px;
 	/*  */
 	/* transition: 0.2s ease-in-out; */
 }
@@ -70,7 +70,7 @@ main .listagem-pokemon {
 	display: flex;
 /* FLEX WRAP vai deixar na vertical ouse ja quebra pra baixo os cartões */
 	flex-wrap: wrap;
-	/* O GAP vai da os espaçamentos entre os cartões */
+	/* O GAP vai dar os espaçamentos entre os elementos cartões */
 	gap: 30px;
 	/* O JUSTIFY CONTENT vai centralizar os conteudo da UL; */
 	justify-content: center;
@@ -81,78 +81,111 @@ main .listagem-pokemon {
 /* LI tem a classe .CARTAO- POKEMON tem que ser estilizada para virar um cartão */
 main .cartao-pokemon {
 	/* vai ser o fundo do cartão */
-	background-color: #a3903b;
+	background-color: #b1afa8;
 	/* WIDTH aqui está dando largura para virar carta */
 	width: 200px; 
 	/* PADDING aqui da um espaçamento da borda dos cartoes, explicanro a letras proximas da bordas */
 	padding: 15px;
-	/* display: flex; */
-	/* flex-direction: column; */
-	/* align-items: center; */
-	/* gap: 15px; */
-	/* border-radius: 15px; */
-	/* transition: 0.2s ease-in-out; */
+	/* DISPLAY FLEX deixa LI como pai o que tornas outras tags como filho e com isso coloco todos lado a lado separando */
+	display: flex;
+	/* FLEX DIRECTION  faz com que seja alinhada por coluna um embaixo da outra */
+	flex-direction: column;
+/* ALIGN ITENS centraliza as tags filhos no meio  */
+	align-items: center;
+/* O GAP vai dar os espaçamentos entre os elementos cartões */
+	gap: 15px;
+	/* BORDER RADIUS vai da uma aparência de borda aredondada*/
+	border-radius: 15px;
+	/* BOX SHADOW cria um sombramento na cartas */
+	box-shadow: 5px 5px #797f81;
+	/* TRANSITION VAI FAZER um efeito de transição ao tocar a carta */
+	transition: 0.2s ease-in-out;
 }
 
-/* main .cartao-pokemon:hover {
-	background-color: #96d9d6;
-} */
+/* EFEITO HOVER efeito no cartão de muda o fundo  */
+main .cartao-pokemon:hover {
+	background-color: #cfe414;
+}
 
 /* .modo-escuro .cartao-pokemon {
 	background-color: #a8a8a8;
 } */
 
-/* main .cartao-pokemon .informacoes {
+/* objetivo desse seletor e alterar o campo informção da carta */
+main .cartao-pokemon .informacoes {
+	/* tem como objetivo separar elemntos */
 	display: flex;
+
 	justify-content: space-between;
+	/* cariar uma borda na informação */
 	border: 1px solid #333333;
+	/* deixa borda arredonda */
 	border-radius: 10px;
-} */
+}
 
-/* main .cartao-pokemon .informacoes span {
+/* estilização do conteudo no SPAN */
+main .cartao-pokemon .informacoes span {
+	/* espaçamento */
 	padding: 5px;
+	/* seletor para deixa tudo em letra maiuscula */
 	text-transform: uppercase;
+	/* tamanho da  fonte */
 	font-size: 17px;
-} */
+}
 
-/* main .cartao-pokemon .gif {
+/* Alterar o tamanho da imagens GIF*/
+main .cartao-pokemon .gif {
+	/* largura da imagem */
 	width: 90px;
+	/* altura da imagem */
 	height: 90px;
-} */
+}
 
-/* main .cartao-pokemon .tipos {
+/* alterar informação do subtexto  */
+main .cartao-pokemon .tipos {
+	/* separar os elementos com isso coloca ao lado */
 	display: flex;
+	/* espaçameto entre as linhas e colunas*/
 	gap: 15px;
-} */
+}
 
-/* main .cartao-pokemon .tipo {
+/* seletor com objetivo de dar um espaçamento */
+main .cartao-pokemon .tipo {
+	/* espaçamento */
 	padding: 8px;
+	/* criar uma borda arredondada */
 	border-radius: 10px;
-} */
+}
 
-/* .grama {
+ /* CLASSES criadas para da cor ao fundo do sub texto */
+.grama {
 	background-color: #7ac74c;
-} */
+}
 
-/* .veneno {
+.veneno {
 	background-color: #df67ddfb;
-} */
+}
 
-/* .fogo {
+.fogo {
 	background-color: #ee8130;
-} */
+}
 
-/* .agua {
+.agua {
 	background-color: #6390f0;
-} */
+}
 
-/* .inseto {
+.inseto {
 	background-color: #a6b91a;
-} */
+}
 
-/* main .descricao {
+/* classe Descriçao para estilização */
+main .descricao {
+	/* defini a altura máxima de um elemento <p> */
 	max-height: 80px;
+	/* Cria um scroll na descrição */
 	overflow-y: scroll;
+	/* tamanho da fonte */
 	font-size: 14px;
+	/* espaçamento no conteudo  */
 	padding-right: 10px;
-} */
+}
