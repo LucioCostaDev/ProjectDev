@@ -107,9 +107,9 @@ main .cartao-pokemon:hover {
 	background-color: #cfe414;
 }
 
-/* .modo-escuro .cartao-pokemon {
+.modo-escuro .cartao-pokemon {
 	background-color: #a8a8a8;
-} */
+}
 
 /* objetivo desse seletor e alterar o campo informção da carta */
 main .cartao-pokemon .informacoes {

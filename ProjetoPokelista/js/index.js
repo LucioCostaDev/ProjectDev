@@ -1,4 +1,4 @@
-/*
+  /*
 	O que precisamos fazer? - quando clicarmos no botão de troca de tema temos que alterar a cor do tema da página para as cores do tema claro ou do tema escuro
 
 	- objetivo 1 - quando clicar no botão de troca de tema, adicionar a classe modo-escuro no body pra que os estilos do modo escuro sejam aplicados e mudar a imagem pra lua
@@ -26,8 +26,8 @@ botaoAlterarTema.addEventListener("click", () => {
   body.classList.toggle("modo-escuro");
 
   if (modoEscuroEstaAtivo) {
-    imagemBotaoTrocaDeTema.setAttribute("src", "./src/imagens/sun.png");
+    imagemBotaoTrocaDeTema.setAttribute("src", "./imagens/interruptor.png");
   } else {
-    imagemBotaoTrocaDeTema.setAttribute("src", "./src/imagens/moon.png");
+    imagemBotaoTrocaDeTema.setAttribute("src", "./imagens/interruptor.png");
   }
 });
