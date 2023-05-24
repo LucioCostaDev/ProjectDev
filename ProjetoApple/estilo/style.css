@@ -10,7 +10,7 @@
     font-weight: normal;
 }
 
-/* criação de variaveis de paleta dae cor CSS */
+/* criação de variaveis de paleta de cor CSS */
 :root {
     --cor1: #bacca4;
     --cor2: #7dad93;
@@ -25,11 +25,12 @@
 
 * {
 
-    /* zera todas a medições padroes */
+    /* zera todas a medições padrões */
     margin: 0px;
     padding: 0px
 }
 
+/* seletor do corpo da pagina */
 body { 
     background-color: var(--cor1);
     font-family: var(--fonte-apple);
