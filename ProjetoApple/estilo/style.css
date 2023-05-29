@@ -108,3 +108,25 @@ nav > a {
     font-weight: bold;
     transition-duration: 0.5s;
 }
+
+/* efeito ao passar mouse */
+nav > a:hover {
+    /* cor de fundo */
+    background-color: var(--cor3);
+    /* cor da fonte */
+    color: var(--cor5);
+}
+
+main{
+    /* min, max e magin vai torna a pagina responsiva */
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    /* padding criado devido as margens estarem proxima */
+    padding: 20px;
+    background-color: white;
+    /* parte visual criar uma sombra     */
+    box-shadow: 0px 0px 10px black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
