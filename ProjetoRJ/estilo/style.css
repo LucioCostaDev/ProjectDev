@@ -33,7 +33,7 @@
 
 
     --fonte1: 'Dancing Script', cursive;
-    --fonte2: 'BeautyDemo', cursive;
+    --fonte2: 'Beauty', cursive;
 
 }
 
@@ -41,6 +41,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: var(--fonte1);
 }
 
 /* configurações pradões da página e no corpo  */
@@ -61,7 +62,9 @@ header > h1 {
     /* distaciamento de cima */
     padding-top: 50px;
     font-variant: small-caps;
-    font-family: var(--fonte1);
+    font-family: var(--fonte);
+    /* fonte 10% view port */
+    font-size: 10vw;
 }
 
 /* alteração no paragrafo(filho) dentro do cabeçalho*/
@@ -96,6 +99,11 @@ section {
     line-height: 2em;
     /* espaçamento na esquerda */
     /* padding-left: 30px; */
+    /* font-size: 3.5vw; */
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 /* seção ou um paragrafo */
@@ -104,15 +112,39 @@ section.normal {
     /* color: black; */
 }
 
-/* seção ou paragrafo */
+/* seção ou paragrafo efeito parallax*/
 section.imagem {
     background-color: var(--cor4);
     /* color: white; */
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    /* fixa a imagem */
+    background-attachment: fixed;
 }
 
-section > p {
-    width: 400px;
+section.imagem > p {
+    display: inline-block;
+    /* width: 400px; */
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.116);
+    text-shadow: 2px 2px 0px black ;
+    color: white;
+}
+
+/* criação de id para as imagens */
+#img1 {
+    background-image: url('../imagens/arpoador.jpg');
+    background-position: right center;
+}
+
+#img2 {
+    background-image: url('../imagens/cristoredentor.jpg');
+    background-position: right center;
+}
+
+#img3 {
+    background-image: url('../imagens/maracana.jpg');
+    background-position: center center;
 }
 
 /* final ou pé do site  */
