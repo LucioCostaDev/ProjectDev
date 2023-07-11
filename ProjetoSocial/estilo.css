@@ -40,7 +40,7 @@ body{
     /* coloca uma imagem no fundo que não vai repetir top center */
     background: url(imagens/pngwing.com\ \(7\).png) no-repeat top  center;
     /* defiini o tamanho da imagem de fundo do elemento ex. esticada ou restrita */
-    /* background-size: cover; */
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -69,10 +69,45 @@ section#telefone {
     background: url(imagens/frame-iphone.png)no-repeat;
 }
 
+/* direcionamento da tela home */
 iframe#tela {
+    /* deixa livre para posicionamento */
     position: relative;
+    /* direciona para topo */
     top: 80px;
+    /* direciona para esquerda */
     left: 22px;
+    /* largura */
     width: 267px;
+    /* altura */
     height: 471px;
+}
+
+/* posiciona as logo na direita */
+section#redes-sociais{
+    text-align: right;
+}
+
+/* aqui vai posiciona as logos  */
+section#redes-sociais img{
+    /* defini largura */
+    width: 50px;
+    /* deifni espaçamento */
+    margin: 10px;
+    /* border radius pra deixa arredondado */
+    border-radius: 50%;
+    /* coloca sombra, obs. pode ser colocado cor   */
+    box-shadow: 2px 2px 5px var(--cor4);
+}
+
+/* efeito nos logos */
+section#redes-sociais img:hover {
+    /* ao clicar cria um efeito borda */
+    border: 2px solid var(--cor1);
+    /* vai da um pequeno efeito */
+    transform: translate(-3px, -3px);
+    /* aumenta um efeito da sombra apos o transform */
+    box-shadow: 5px 5px 10px var(--cor4);
+    /* aqui da uma duração ao efeito */
+    transition: .3s, border 1s;
 }
