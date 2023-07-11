@@ -38,7 +38,7 @@ html, body {
 
 body{
     /* coloca uma imagem no fundo que não vai repetir top center */
-    background: url(imagens/pngwing.com\ \(7\).png) no-repeat top  center;
+    background: url(imagens/fundo22.jpg) no-repeat top  center;
     /* defiini o tamanho da imagem de fundo do elemento ex. esticada ou restrita */
     background-size: cover;
     background-attachment: fixed;
@@ -55,18 +55,19 @@ section#telefone {
     /* posição absoluta direciona em qual posição vai fica */
     position: absolute;
     /* posição em cima */
-    top: 50%;
+    top: 48%;
     /* posição esquerda */
     left: 50%;
     /* para deixar no meio da tela e preciso transform */
-    transform: translate(-50%, -50%);
+
+    transform: translate(-40%, -50%);
 
     /* altura */
-    height: 629px;
+    height: 600px;
     /* largura */
-    width: 311px;
+    width: 700px;
     /* imagem do celular*/
-    background: url(imagens/frame-iphone.png)no-repeat;
+    background: url(imagens/painel_amostra.png)no-repeat;
 }
 
 /* direcionamento da tela home */
@@ -74,13 +75,13 @@ iframe#tela {
     /* deixa livre para posicionamento */
     position: relative;
     /* direciona para topo */
-    top: 80px;
+    top: 35px;
     /* direciona para esquerda */
     left: 22px;
     /* largura */
-    width: 267px;
+    width: 533px;
     /* altura */
-    height: 471px;
+    height: 328px;
 }
 
 /* posiciona as logo na direita */
@@ -95,7 +96,7 @@ section#redes-sociais img{
     /* deifni espaçamento */
     margin: 10px;
     /* border radius pra deixa arredondado */
-    border-radius: 50%;
+    /* border-radius: 50%; */
     /* coloca sombra, obs. pode ser colocado cor   */
     box-shadow: 2px 2px 5px var(--cor4);
 }
