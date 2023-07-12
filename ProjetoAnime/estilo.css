@@ -86,17 +86,17 @@ iframe#tela {
 
 /* posiciona as logo na direita */
 section#redes-sociais{
-    text-align: right;
+    text-align: bottom;
 }
 
 /* aqui vai posiciona as logos  */
 section#redes-sociais img{
     /* defini largura */
-    width: 50px;
+    width: 80px;
     /* deifni espaçamento */
     margin: 10px;
     /* border radius pra deixa arredondado */
-    /* border-radius: 50%; */
+    border-radius: 10px;
     /* coloca sombra, obs. pode ser colocado cor   */
     box-shadow: 2px 2px 5px var(--cor4);
 }
