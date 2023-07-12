@@ -98,7 +98,7 @@ section#redes-sociais img{
     /* border radius pra deixa arredondado */
     border-radius: 10px;
     /* coloca sombra, obs. pode ser colocado cor   */
-    box-shadow: 2px 2px 5px var(--cor4);
+    box-shadow: 2px 2px 5px red;
 }
 
 /* efeito nos logos */
@@ -108,7 +108,7 @@ section#redes-sociais img:hover {
     /* vai da um pequeno efeito */
     transform: translate(-3px, -3px);
     /* aumenta um efeito da sombra apos o transform */
-    box-shadow: 5px 5px 10px var(--cor4);
+    box-shadow: 5px 5px 10px red);
     /* aqui da uma duração ao efeito */
     transition: .3s, border 1s;
 }
